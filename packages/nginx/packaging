@@ -84,6 +84,7 @@ echo "Building nginx..."
     --prefix=${BOSH_INSTALL_TARGET} \
     --with-pcre=../pcre-8.12 \
     --with-http_ssl_module \
+    --with-cc-opt=-Wno-error \
     --add-module=../headers-more-v0.15rc1 \
     --add-module=../nginx_upload_module-2.2.0 \
     --add-module=../simpl-ngx_devel_kit-bc97eea \
